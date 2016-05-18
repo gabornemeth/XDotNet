@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6063508f-4066-4176-b8d7-18347ef031a4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XDotNet</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\BoolInverseConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\FileSizeToStringConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ListViewExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\StorageExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\UIElementExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Geolocation\Geolocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\BackgroundTaskHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\BitmapHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ListViewItemHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mvvm\FlyoutHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mvvm\NamescopeBinding.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Common\StandardStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

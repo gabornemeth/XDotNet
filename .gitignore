@@ -1,0 +1,8 @@
+XDotNet.Common/bin/
+XDotNet.Common/obj/
+XDotNet.Tests/bin/
+XDotNet.Tests/obj/
+packages/
+XDotNet.RestSharp.WinStore/bin/Debug/Microsoft.Threading.Tasks.Extensions.xml
+XDotNet.RestSharp.WinStore/obj/
+XDotNet.RestSharp.WinStore/bin/
