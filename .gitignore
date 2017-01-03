@@ -4,4 +4,5 @@ XTools.Tests/bin/
 XTools.Tests/obj/
 packages/
 bin/
-obj/
+obj/
+*.nupkg
