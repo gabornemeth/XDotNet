@@ -50,11 +50,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="PathTest.BackSlash.cs" />
     <Compile Include="PathTest.cs" />
     <Compile Include="StringExtensionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PathTest.Slash.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XTools\XTools.csproj">

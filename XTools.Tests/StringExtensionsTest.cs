@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using XTools.Extensions;
 
 namespace XTools.Tests
 {

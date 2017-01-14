@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace XTools.Extensions
+namespace XTools
 {
     public class StringExtensions
     {

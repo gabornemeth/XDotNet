@@ -8,7 +8,7 @@
 //
 using System;
 
-namespace XTools.Extensions
+namespace XTools
 {
     public static class DateTimeExtensions
     {
