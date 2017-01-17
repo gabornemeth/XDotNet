@@ -1,17 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
 using XTools.Helpers;
 
 namespace XTools.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class PathTest
     {
-        [TestMethod]
+        [Test]
         public void IncrementTest()
         {
             Assert.AreEqual("proba (1).txt", PathHelper.Increment("proba.txt"));

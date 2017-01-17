@@ -1,12 +1,12 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace XTools.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class StringExtensionsTest
     {
-        [TestMethod]
+        [Test]
         public void Random_String()
         {
             string s = StringExtensions.GetRandomString(20);

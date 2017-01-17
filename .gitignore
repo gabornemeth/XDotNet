@@ -1,8 +1,5 @@
-XTools/bin/
-XTools/obj/
-XTools.Tests/bin/
-XTools.Tests/obj/
+bin
+obj
+tools/
 packages/
-bin/
-obj/
 *.nupkg
