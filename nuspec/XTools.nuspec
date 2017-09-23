@@ -2,7 +2,6 @@
 <package >
   <metadata>
     <id>XTools</id>
-    <version>0.2.1</version>
     <title>XTools</title>
     <authors>Gabor Nemeth</authors>
     <owners>Gabor Nemeth</owners>
@@ -15,7 +14,7 @@
     <dependencies></dependencies>
   </metadata>
   <files>
-    <!-- Portable -->
-    <file src="../XTools/bin/Release/XTools.dll" target="lib/portable-net45+win8+wpa81" />
+    <!-- .NET Standard -->
+    <file src="../src/XTools/bin/Release/netstandard1.0/XTools.dll" target="lib\netstandard1.0" />
   </files>
 </package>

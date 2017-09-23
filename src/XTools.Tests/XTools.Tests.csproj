@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XTools\XTools.csproj">
-      <Project>{a78f59ee-456e-4512-9a59-9b908d98a58d}</Project>
+      <Project>{26454efd-50dc-499c-831b-128968949dfd}</Project>
       <Name>XTools</Name>
     </ProjectReference>
   </ItemGroup>

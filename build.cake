@@ -3,6 +3,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #tool nuget:?package=NUnit.ConsoleRunner&version=3.4.0
+
 #l "versionUtils.cake"
 #l "settingsUtils.cake"
 
@@ -127,34 +128,14 @@ Task("Build")
     {
         Information("Building {0}", solution);
 
-
-				/*if (buildSettings.Build.EnableXamarinIOS)
-				{
-					// Mac build host connection properties
-					msBuildSettings.WithProperty("ServerAddress", buildSettings.Build.MacAgentIPAddress);
-					msBuildSettings.WithProperty("ServerUser", buildSettings.Build.MacAgentUserName);
-					msBuildSettings.WithProperty("ServerPassword", buildSettings.Build.MacAgentUserPassword);
-				}*/
-				if (IsRunningOnWindows())
-				{
-					var msBuildSettings = new MSBuildSettings {
-						MaxCpuCount = 1,
-						Configuration = configuration,
-						PlatformTarget = PlatformTarget.MSIL,
-						Verbosity = Verbosity.Diagnostic
-					}.WithProperty("TreatWarningsAsErrors",buildSettings.Build.TreatWarningsAsErrors.ToString())
-					 .WithTarget("Build");
-				 	MSBuild(solution, msBuildSettings);
-				}
-				else
-				{
-					var settings = new XBuildSettings {
-						Configuration = configuration,
-						Verbosity = Verbosity.Diagnostic
-					}.WithProperty("TreatWarningsAsErrors",buildSettings.Build.TreatWarningsAsErrors.ToString())
-					 .WithTarget("Build");
-					XBuild(solution, settings);
-				}
+		var msBuildSettings = new MSBuildSettings {
+			MaxCpuCount = 1,
+			Configuration = configuration,
+			PlatformTarget = PlatformTarget.MSIL,
+			Verbosity = Verbosity.Diagnostic
+		}.WithProperty("TreatWarningsAsErrors",buildSettings.Build.TreatWarningsAsErrors.ToString())
+		 .WithTarget("Build");
+	 	MSBuild(solution, msBuildSettings);
     }
 });
 
